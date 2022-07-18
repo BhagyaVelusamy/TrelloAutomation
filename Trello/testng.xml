@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Trello UI test suite">
+<listeners>
+<listener class-name="com.Trello.Utility.Listeners"/>
+</listeners>
+  <test thread-count="5" name="LoginTest">
+    <parameter name ="browser" value="chrome"/>
+   <parameter name ="browserVersionNumber" value="103.0.5060.114"/>
+   <parameter name ="URL" value="https://trello.com/login"/>
+    <classes>
+    <class name="com.Trello.Configurations.SampleTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
